@@ -1,0 +1,2 @@
+rootProject.name='Mago'
+include ':app'

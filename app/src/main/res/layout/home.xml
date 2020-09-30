@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/magopensa"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/balao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/componente2"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escreva o número aqui"
+        android:layout_below="@id/balao"
+        android:layout_marginTop="10dp"
+        android:textSize="35dp"
+        android:textColor="@color/btn"
+        android:layout_toLeftOf="@id/magopensa"/>
+
+
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/balao"
+        android:layout_below="@id/topomago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/balaotxt" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/btn"
+        android:id="@+id/topomago" >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="MAGO"
+           android:textColor="@android:color/white"
+           android:fontFamily="@font/balooda_regular"
+           android:textSize="32sp"
+           android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtPensar"
+        android:layout_width="189dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="113dp"
+        android:text="Estou pensando em um número entre 0 e 5, tente acertar!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnPalpite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/magopensa"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Palpite"
+        android:textSize="20sp"
+        android:background="@drawable/btncomecar" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPalpite"
+        android:text="Texto vai aparecer aqui"
+        android:fontFamily="@font/balooda_regular"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"   />
+
+
+</RelativeLayout>

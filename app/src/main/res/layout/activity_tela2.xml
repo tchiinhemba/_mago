@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradiente1"
+    android:padding="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela2">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@mipmap/elipse"
+        android:id="@+id/img"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAGO"
+        android:textSize="52sp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/balooda_regular"
+        android:id="@+id/bemvindo"/>
+
+    <Button
+        android:id="@+id/comecar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Começar"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/img"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btn"/>
+
+
+</RelativeLayout>
